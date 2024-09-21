@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.logo {
+    width: 40px; /* Atur lebar logo sesuai kebutuhan */
+    height: auto; /* Memastikan tinggi otomatis untuk menjaga rasio */
+    margin-right: 10px; /* Jarak antara logo dan teks navbar */
+    vertical-align: middle; /* Menjaga logo rata tengah dengan teks */
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.hero-section {
+    position: relative;
+    background: linear-gradient(135deg, #0066cc 0%, #33ccff 100%);
+    color: white;
+    padding: 100px 0;
+    overflow: hidden; /* Agar elemen pseudo tidak keluar dari area hero-section */
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    background-image: url('assets/images/medicine_texture1.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Efek blur hanya pada gambar */
+    z-index: 1;
+    opacity: 0.7; /* Opsional: Menurunkan opacity jika ingin gambar lebih samar */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2; /* Memastikan konten teks di atas lapisan blur */
+}
+
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan teks */
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan teks */
+}
+
+
+.about-section {
+    padding: 50px 0;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about-section img {
+    border-radius: 10px;
+}
+
+.products-section {
+    padding: 50px 0;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.product-card {
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+    width: 100%; /* Memastikan gambar mengambil lebar penuh dari kartu */
+    height: 200px; /* Mengatur tinggi gambar yang sama */
+    object-fit: cover; /* Memastikan gambar terpotong dengan baik tanpa mengubah rasio aspek */
+}
+
+.products-section .card {
+    height: 100%; /* Memastikan semua kartu memiliki tinggi yang sama */
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.contact-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.card-title {
+    font-weight: bold; /* Membuat teks card title menjadi tebal */
+    color: #333; /* Opsional: Mengubah warna teks card title */
+    font-size: 1.25rem; /* Opsional: Menyesuaikan ukuran font */
+}
